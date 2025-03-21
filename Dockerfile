@@ -1,3 +1,4 @@
 FROM nginx
 COPY . /usr/share/nginx/html
-EXPOSE 3000
+EXPOSE 80
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
